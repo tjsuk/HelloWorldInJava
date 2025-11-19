@@ -114,12 +114,19 @@ void main() {
             """;
 
     IO.println(multiline);
-
+/*
     Scanner reader = new Scanner(System.in);
     IO.print("What is your name: ");
+
     String yourName = reader.nextLine();
     IO.print("What is your age: ");
     byte yourAge = reader.nextByte();
     yourAge++;
     System.out.printf("Your name is %s and you will %d years old next year.",yourName, yourAge);
+*/
+
+
+    Integer type1 = 127;
+    Integer type2 = 127;
+    IO.println(type1 == type2);
 }
