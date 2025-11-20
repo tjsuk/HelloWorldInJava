@@ -1,5 +1,5 @@
 void main() {
-    IO.println("Hello, World!");
+/*    IO.println("Hello, World!");
 
     byte smallNumber = 127;
     short shortValue = 3000;
@@ -114,7 +114,7 @@ void main() {
             """;
 
     IO.println(multiline);
-/*
+
     Scanner reader = new Scanner(System.in);
     IO.print("What is your name: ");
 
@@ -123,10 +123,89 @@ void main() {
     byte yourAge = reader.nextByte();
     yourAge++;
     System.out.printf("Your name is %s and you will %d years old next year.",yourName, yourAge);
-*/
+
 
 
     Integer type1 = 127;
     Integer type2 = 127;
     IO.println(type1 == type2);
+
+    // byte -> short -> int -> long
+    // long -> int -> short -> byte
+
+    // long longNum = 100;
+    // int intNum = (int)longNum;
+
+    /*
+    int numInt1 = 2;
+
+    short numShort2 = 3;
+    float result = 2/(float)3.0;
+
+    long numLong3 = 342_934_092l;
+    float pi3 = 3.99999999999999999999999999f;
+    double result1 = numInt1 + pi3;
+    IO.println(result);
+
+
+    double price = 1.49; // litre price for petrol (£)
+    int capacity = 20; // in litres
+    double totalCostToFillTankFromEmpty = capacity * price;
+    IO.println((int)totalCostToFillTankFromEmpty);
+
+
+
+    char letter = 'B';
+    int giveMeTheNumber = letter;
+    IO.println(giveMeTheNumber);
+
+    int letterValue = 97;
+    char thisIsTheCharacter = (char)letterValue;
+    IO.println(thisIsTheCharacter);
+
+    char digit  = '8';
+    int value = digit - '0';
+    IO.println(value);
+
+    char newLetter = (char)(letter + 32);
+    IO.println(newLetter);
+
+
+
+    final float VAT_RATE = 0.20f;
+
+
+    final int quantity = 1_000;
+    int total = quantity * 5;
+    IO.println(1000 * 5);
+
+    IO.println(3 + 6 * 7 / 9.0f);
+    IO.println(3 == 7);
+
+    byte b1 = -1;
+    byte b2 = b1++;
+    IO.println(b2);
+    IO.println(b1);
+    IO.println(-b2);
+
+    byte a11 = 1;
+    a11 += 5;  // a11 = a11 + 5;
+    IO.println(a11);
+    a11 -= 4;
+    IO.println(a11);
+    a11 *= 10;
+    IO.println(a11);
+    a11 /= 4;
+    IO.println(a11);
+    a11 %= 5;
+    IO.println(a11);
+
+    IO.println(1l/2l * 10); // 0
+
+    int a12 = 5;
+    double b12 = a12 + (25.0 / 10);  // a12 + 2.5
+    IO.println(b12);
+*/
+
+
 }
