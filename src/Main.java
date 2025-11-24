@@ -1,3 +1,5 @@
+import org.xml.sax.SAXNotRecognizedException;
+
 void main() {
 /*    IO.println("Hello, World!");
 
@@ -205,7 +207,142 @@ void main() {
     int a12 = 5;
     double b12 = a12 + (25.0 / 10);  // a12 + 2.5
     IO.println(b12);
-*/
 
+
+    byte age = 14;
+    if (age >= 16) {
+        IO.println("Can vote!");
+    }
+    else if (age == 15){
+        IO.println("Can't vote, can next year!");
+    }
+    else {
+        IO.println("Not eligible for voting at the moment!");
+    }
+
+
+    final short SCORE = 160;
+
+    if (SCORE >= 150){
+        IO.println("You're a genius!");
+    }
+
+
+
+    String user = "Admin";
+    String pwd = "Password";
+
+    String userInput = "admin";
+    String userPwd = new String("Password01");
+
+    if (user.toLowerCase().equals(userInput.toLowerCase()) && (pwd.equals(userPwd))){
+        IO.println("Both matches");
+//        if (!(pwd == userPwd)) {
+//            IO.println("Password doesn't match");
+//        }
+    }
+
+
+    int age = 18;
+    boolean isMember = false;
+
+    if (age >= 18) {
+
+        if (isMember){
+            IO.println("Eligible for member perks");
+        } else {
+            IO.println("Not a member, but meets age restriction.");
+        }
+
+    } else {
+        IO.println("Too young to be a member.");
+    }
+
+    // AND
+    byte age = 19;
+    boolean isAdult = age >= 18;
+    boolean hasID = true;
+    boolean canEnter = isAdult && hasID;  // true
+
+    // NAND
+    boolean a = true;
+    boolean b = false;
+    boolean result = !(a && b); // true
+
+    // OR
+    boolean isAdmin = false;
+    boolean isEditor = false;
+    boolean canModify = isAdmin || isEditor; // false
+
+    // NOR
+    a = false;
+    b = false;
+    result = !(a || b); // true
+
+    // BUFFER
+    a = false;
+    result = a; // false
+
+    // NOT
+    result = !a; // true
+
+    // XOR
+    a = true;
+    b = false;
+    result = a ^ b; // true
+
+    // XNOR
+    a = true;
+    b = false;
+    result = !(a ^ b); // false
+
+    // a b c d -> a ^ b && c || d
+
+    // boolean algebra
+
+    // Identity Law
+    // a && true => a
+    // a || false => a
+    boolean isEnabled = true;
+    boolean output1 = isEnabled && true; //true ## boolean output1 = isEnabled;
+    boolean output2 = isEnabled || false; // true ## boolean output2 = isEnabled;
+
+    // Null (Domination) Law
+    // a && false = false
+    // a || true = true
+
+    // Idempotent Law
+    // a && a = a
+    // a || a = a
+
+    // Complement Law
+    // a && !a = false
+    // a || !a = true
+
+    // Double Negation Law
+    // !!a = a
+
+    // Commutative Law
+    // A && B = B && A
+    // A || B = B || A
+
+    // Associative Law
+    // A && (B && C) = (A && B) && C
+    // A || (B || C) = (A || B) || C
+
+    // Distributive Law
+    // A && (B || C) = (A && B) || (A && C)
+    // A || (B && C) = (A || B) && (A || C)
+
+    // Absorption Law
+    // A || (A && B) = A
+    // A && (A || B) = A
+
+    // De Morgan's Law
+    // !(A && B) = !A || !B
+    // !(A || B) = !A && !B
+
+
+ */
 
 }
