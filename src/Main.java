@@ -1,4 +1,4 @@
-import org.xml.sax.SAXNotRecognizedException;
+import javax.imageio.plugins.tiff.TIFFTagSet;
 
 void main() {
 /*    IO.println("Hello, World!");
@@ -343,6 +343,200 @@ void main() {
     // !(A || B) = !A && !B
 
 
- */
 
+
+    String weekday = "Monday";
+    weekday = weekday.toUpperCase();
+
+    switch(weekday){
+        case "MONDAY":
+            IO.println("Start of the week.");
+            break;
+        case "FRIDAY":
+            IO.println("End of the week");
+            break;
+        default:
+            IO.println("Mid week");
+    }
+
+    String level = "1";
+
+    switch(level){
+        case "1": IO.println("Level 1"); break;
+        case "2": IO.println("Level 2"); break;
+
+        default: IO.println("Not a level");
+    }
+
+    String role = "SUPERUSER";
+
+    switch (role){
+        case "ADMIN": IO.println("I am da BOSS!");
+        case "SUPERUSER": IO.println("I am da Database boss!");
+        break;
+        default: IO.println("Not a boss!");
+    }
+
+
+    String cmd = "stop";
+
+    if (cmd.equals("start")) {
+        //do something
+    } else if (cmd.equals("stop")) {
+        // do something
+    } else if (cmd.equals("restart")) {
+        // do something
+    } else if (cmd.equals("start")) {
+        // do something
+    } else {
+        // do something
+    }
+
+    switch (cmd) {
+        case "start": {
+            IO.println("start");
+            break;
+        }
+        case "stop": {
+            /* do something
+            break;
+        }
+        case "restart": {
+            IO.println("restart");
+            break;
+        }
+        default: {
+            IO.println("No idea!");
+        }
+    }
+
+
+
+    // Menu : 1. Dogs, 2. Cats, 3. Gerbils, 4. Goldfish ...
+    String option = "1";
+    switch(option){
+        case "1" -> IO.println("Dogs");
+        case "2" -> IO.println("Cats");
+        case "3" -> IO.println("Gerbils");
+        case "4" -> IO.println("Goldfish");
+        default -> IO.println("What the hell is that?");
+    }
+
+    int score = 0;
+    switch(score){
+        case 0,1,2,3,4 -> IO.println("Very low.");
+        case 5,6,7,8,9 -> IO.println("Average");
+        case 10 -> IO.println("High");
+        default -> IO.println("Out of scope");
+    }
+
+    // for odd numbers
+    for (int i = 2; i <= 10; i++){
+        if (i%2 == 1)
+            IO.println(i);
+    }
+
+    // LESS COMPLEX
+    for (int i = 1; i <= 10; i+=2){
+        IO.println(i);
+    }
+
+
+    byte count = 0;
+    boolean useLoop = true;
+    while (useLoop){
+        IO.println("Currently using the loop");
+        count++;
+        if (count < 10){
+            useLoop = true;
+        }
+        else{
+            useLoop = false;
+        }
+    }
+
+    // Don't use While True!
+    while (true){
+        // Oh crap I'm stuck in a loop, I know I will use Break!
+    }
+
+
+    // do while
+
+
+    Scanner reader = new Scanner(System.in);
+    String choice;
+    do {
+        IO.println("""
+    Menu 
+    option 1:
+    option 2:
+    ...
+     
+    """);
+        IO.print("Enter your name: ");
+        choice = reader.nextLine();
+        // validate your reader.
+    }
+    while (choice.isBlank());
+
+    // using continue to ignore a condition
+    for (int i = 0; i <= 30; i++) {
+        if (i%5 == 0) continue;
+            IO.println("Found 5 at index " + i);
+    }
+
+    // Infinite loop
+    while(true){
+        IO.print("Hello World ");
+    }
+    // break out using the run stop option in your ide
+    // in a shell use ctrl + c
+
+
+    // Infinite loop inside a for loop
+    for (int i = 0;  i >= 0 ; i++) {
+        IO.println(i);
+    }
+
+    // int[] numbers = new int[10];
+    int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+    // int[] numbers = new int[]{1,2,3,4,5,6,7,8,9,10};
+
+    // int[] numbers;
+    // numbers = new int[1_000_000];
+    // IO.println(numbers[100_456]);
+
+    // for (int i = 0; i < numbers.length; i++) {
+    //    IO.print(numbers[i] + " ");
+    //    }
+
+    int[] copy = Arrays.copyOf(numbers, numbers.length);
+    for (int i = 0; i < copy.length; i++) {
+        IO.print(copy[i] + " ");
+    }
+    IO.println();
+    IO.println(copy.length);
+
+    int[] copyRange = Arrays.copyOfRange(numbers,1,4);
+    for (int i = 0; i < copyRange.length; i++) {
+        IO.print(copyRange[i] + " ");
+    }
+
+    IO.println();
+
+    int[] copyOfNumbers = numbers;
+    for (int i = 0; i < copyOfNumbers.length; i++) {
+        IO.print(copyOfNumbers[i] + " ");
+    }
+
+    // copyOfNumbers[9] = 1000;
+
+    IO.println(numbers[9] + " " + copyOfNumbers[9] + " " + copy[9]);
+
+    int[] clonedArray = numbers.clone();
+    clonedArray[9] = 1000;
+    IO.println(numbers[9] + " " + clonedArray[9]);
+
+ */
 }
