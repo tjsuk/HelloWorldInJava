@@ -617,6 +617,13 @@ void main() {
     for (int i = 0; i < list.size(); i++) {
         IO.println(list.get(i));
     }
+
+
+    double price = 12.5;
+    System.out.printf("Price = £%.2f%n",price);
+
+    System.out.printf("%-10s %10.2f%n","Total:",34.99);
+
  */
 
 }
