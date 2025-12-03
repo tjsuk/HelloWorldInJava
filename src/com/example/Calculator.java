@@ -1,3 +1,5 @@
+package com.example;
+
 public class Calculator {
     public static int getSum(int number1, int number2){
         return number1 + number2;

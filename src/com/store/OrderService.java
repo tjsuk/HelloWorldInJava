@@ -1,3 +1,5 @@
+package com.store;
+
 public class OrderService {
     public static float applyDiscount(float total, float discountRate){
         return total - (total * discountRate);

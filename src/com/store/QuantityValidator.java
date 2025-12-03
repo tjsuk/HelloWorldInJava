@@ -1,3 +1,5 @@
+package com.store;
+
 import java.util.Scanner;
 
 public class QuantityValidator {
